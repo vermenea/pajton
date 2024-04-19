@@ -95,19 +95,53 @@ else:
 
 #zad6
 
-def coin_flip():
-    return random.choice(["orzel", "reszka"])
-flips_amount = 10
-print(f"Wynik: ")
-for _ in range(flips_amount):
-    wynik = coin_flip()
-    print(wynik)
+# def coin_flip():
+#     return random.choice(["orzel", "reszka"])
+# flips_amount = 10
+# print(f"Wynik: ")
+# for _ in range(flips_amount):
+#     wynik = coin_flip()
+#     print(wynik)
 
+#zad7
 
+# piwa = [
+#     {"nazwa": "Tyskie", "kalorie_na_100ml": 43, "objetosc_ml": 500},
+#     {"nazwa": "Zywiec", "kalorie_na_100ml": 45, "objetosc_ml": 500},
+#     {"nazwa": "Lech", "kalorie_na_100ml": 42, "objetosc_ml": 330},
+#     {"nazwa": "Desperados", "kalorie_na_100ml": 60, "objetosc_ml": 400}
+# ]
+
+# total_calories = 0
+
+# for piwo in piwa:
+#     total_calories += piwo["kalorie_na_100ml"] * piwo["objetosc_ml"] / 100
+#     print(total_calories)
     
+#zad8
+
+# C = int(input(f"Enter celsius temperature: "))
 
 
+# def convert_temperature(C):
+#     F = 9/5 * C + 32
+#     return F
+
+# F = convert_temperature(C)
+# print(F)
     
+#zad9
 
+# input_int = (input(f"Enter a few numbers to the list separated by spaces: "))
+# input_list = [int(num) for num in input_int.split()]
+# cutoff = int(input(f"Enter a cutoff number: "))
+
+# def find_numbers(input_list, cutoff):
+#     filtered_list_of_numbers = [num for num in input_list if num >= cutoff]
+#     filtered_list_of_numbers.sort()
+#     return filtered_list_of_numbers
+
+# result_list = find_numbers(input_list, cutoff)
+# print(result_list)
     
-
+#
