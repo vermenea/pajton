@@ -323,5 +323,5 @@ import random
 #     else:
 #         print("Ok")
 
-update_patients_data()
-print("Here is updated records:", clinic_pets_data)
+# update_patients_data()
+# print("Here is updated records:", clinic_pets_data)
