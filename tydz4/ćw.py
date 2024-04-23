@@ -33,15 +33,39 @@ df['Oceny'] = grades_list
 
 #zad6
 
-df['Średnia'] = mean(df['Oceny'])
+df['Średnia'] = df[['Javascript', 'Python', 'Java']].mean(axis=1)
+
 
 
 #zad7
 
-df['Zdał'] = df['Oceny'] >= 3 
+df['Zdał'] = df['Średnia'] >= 3 
 print(df)
 
 #zad8
 
-plt.plot(df['Średnia'])
-plt.show()
+# plt.plot(df['Imię'], df['Średnia'])
+# plt.xlabel('Student')
+# plt.ylabel('Średnia ocen')
+# plt.title('Średnie ocen studentów')
+# plt.show()
+
+#zad9
+
+# plt.plot(df['Imię'], df['Javascript'], marker='o', linestyle='-', color='b', label='Javascript')
+# plt.plot(df['Imię'], df['Python'], marker='s', linestyle='-', color='r', label='Python')
+# plt.plot(df['Imię'], df['Java'], marker='^', linestyle='-', color='g', label='Java')
+
+# plt.xlabel('Student')
+# plt.ylabel('Średnia ocen')
+# plt.title('Średnie ocen studentów')
+
+# plt.legend()
+# plt.show()
+
+#zad10
+
+
+
+
+
