@@ -39,8 +39,8 @@ df['Średnia'] = df[['Javascript', 'Python', 'Java']].mean(axis=1)
 
 #zad7
 
-df['Zdał'] = df['Średnia'] >= 3 
-print(df)
+# df['Zdał'] = df['Średnia'] >= 3 
+# print(df)
 
 #zad8
 
@@ -64,6 +64,18 @@ print(df)
 # plt.show()
 
 #zad10
+# grades = ['Javascript', 'Python', 'Java', 'Oceny']
+# f, axs = plt.subplots(1, 7, figsize=(25, 10), gridspec_kw={'wspace': 0.8}) 
+
+# students = ['Anna', 'Emilia', 'Jakub', 'Marta', 'Michał', 'Piotr', 'Tadeusz']
+# for i, student in enumerate(students):
+#     axs[i].bar(grades, df.loc[df['Imię'] == student, grades].values[0])
+#     axs[i].set_xlabel('Przedmiot')
+#     axs[i].set_ylabel('Ocena')
+#     axs[i].set_title(f'Oceny {student}')
+#     axs[i].tick_params(axis='x', rotation=65)
+
+# plt.show()
 
 
 
