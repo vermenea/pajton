@@ -2,7 +2,6 @@
 #libs
 from rdkit import Chem
 from rdkit.Chem import Draw
-import matplotlib.pyplot as plt
 
 # CCCCCCC - heptan
 heptan = Chem.MolFromSmiles('CCCCCCC')
@@ -30,7 +29,7 @@ propanoic_acid_img = Draw.MolToImage(propanoic_acid)
 octan = Chem.MolFromSmiles('CCCCCCCC')
 octan_img = Draw.MolToImage(octan)
 
-octan_img.show()
+# octan_img.show()
 
 #CCCC1CC1 - some_molecule
 
